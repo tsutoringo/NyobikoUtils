@@ -29,7 +29,7 @@ function progress (label, percentage=0, size='l') {
 
 function checkbox (label, size='l') {
 	return (checkbox => {
-		checkbox.classList.add(`u-button size-${size} show-all toggle-problem-only`.split(' '));
+		checkbox.classList.add(...(`u-button size-${size} show-all toggle-problem-only`.split(' ')));
 		checkbox.innerHTML = `
 			<input type="checkbox">
 			<span>${label}</span>`
